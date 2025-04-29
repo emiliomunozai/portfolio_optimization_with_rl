@@ -1,0 +1,64 @@
+
+# Environment
+crypto_pairs:
+- "BTC/USDT"
+- "ETH/USDT"
+- "BNB/USDT"
+- "TRX/USDT"
+- "DOT/USDT"
+
+initial_year: 2020
+
+n_feature_states: 10
+variation_range: 
+- -1
+- 1
+
+n_actions: 2
+
+trading_fees: 0.00001
+borrow_interest_rate: 0.001
+initial_position: 0
+portfolio_initial_value: 1000
+debt_exposure: 1
+
+# Agent parameters
+gamma: 0.8  # discount factor used in q-learning
+epsilon: 0.2  # Explore/exploit rate (incluir protocolo de enfriamiento)
+alpha: 0.4 # learning rate for SARSA (information override old vs new)
+
+# Learning
+num_episodes: 20
+
+
+# # Environment
+# crypto_pairs:
+# - "BTC/USDT"
+# - "ETH/USDT"
+# - "BNB/USDT"
+# - "TRX/USDT"
+# - "DOT/USDT"
+
+# initial_year: 2020
+
+# n_feature_states: 10
+# variation_range: 
+# - -1
+# - 1
+
+# n_actions: 2
+
+# trading_fees: 0.00001
+# borrow_interest_rate: 0.001
+# initial_position: 0
+# portfolio_initial_value: 1000
+# debt_exposure: 1
+
+# # Agent parameters
+# gamma: 0.8  # discount factor used in q-learning
+# epsilon: 0.8  # Explore/exploit rate (incluir protocolo de enfriamiento)
+# alpha: 0.5  # learning rate for SARSA (information override old vs new)
+
+# # Learning
+# num_episodes: 100
+
